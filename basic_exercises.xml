@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_basic_test"
+    android:orientation="vertical"
+    tools:context="com.victormagosso.ingleseingles.exercicios.basic.TestBasicActivity">
+
+    <TextView
+        android:id="@+id/timeCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/actor"
+        android:gravity="right"
+        android:text="00:30"
+        android:textSize="50sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/currentScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/actor"
+                android:text="Score:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/currentQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/actor"
+                android:text="Question: 0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tituloPergunta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/actor"
+                android:text="Aqui vai ficar a pergunta referente a questao"
+                android:textSize="19sp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <RadioButton
+                    android:id="@+id/opcaoUm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:button="?android:attr/listChoiceIndicatorMultiple"
+                    android:fontFamily="@font/actor"
+                    android:text="Option 1"
+                    android:textColor="@color/cinza_menu"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/opcaoDois"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="?android:attr/listChoiceIndicatorMultiple"
+                    android:fontFamily="@font/actor"
+                    android:text="Option 2"
+                    android:textColor="@color/cinza_menu"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/opcaoTres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="?android:attr/listChoiceIndicatorMultiple"
+                    android:fontFamily="@font/actor"
+                    android:text="Option 3"
+                    android:textColor="@color/cinza_menu"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/opcaoQuatro"
+                    style="@android:style/Widget.Holo.Light.CompoundButton.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:button="?android:attr/listChoiceIndicatorMultiple"
+                    android:fontFamily="@font/actor"
+                    android:gravity="center"
+                    android:text="Option 4"
+                    android:textColor="@color/cinza_menu"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/buttonConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/basic_botao"
+                    android:fontFamily="@font/actor"
+                    android:text="Confirm"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
