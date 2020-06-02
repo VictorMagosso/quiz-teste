@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_basic_test"
+    tools:context=".exercicios.basic.IntroExercicioActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorAccentSec" />
+
+    <ImageView
+        android:id="@+id/imageView535"
+        android:layout_width="76dp"
+        android:layout_height="219dp"
+        app:srcCompat="@drawable/exbasic" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/actor"
+            android:gravity="center_horizontal"
+            android:text="Basic Level Test"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/highScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/actor"
+        android:gravity="center_horizontal"
+        android:text="Highscore: 0"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textoAprovado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Aqui você coloca a descrição"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonStartTest"
+        android:layout_width="251dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/basic_botao"
+        android:fontFamily="@font/actor"
+        android:text="Start test"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/trofeuBasic"
+        android:layout_width="wrap_content"
+        android:layout_height="147dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:srcCompat="@drawable/trofeubasic"
+        tools:visibility="gone" />
+
+    </LinearLayout>
+</RelativeLayout>
